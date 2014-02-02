@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+var data;
+
+process.stdin.resume();
+process.stdin.setEncoding('UTF-8');
+process.stdin.pipe(process.stdout);
+
+process.stdin.on('data', function(data) {
+  process.stdout.write("GOT A NOTE: " + data);
+});
+
+process.stdin.on('end', function() {
+});
+
+setInterval(function() { }, 1e3); // keep alive
