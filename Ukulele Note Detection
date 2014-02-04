@@ -13,7 +13,7 @@ FRAMES_PER_BLOCK = int(RATE*BLOCK_DURATION)
 NORMALIZATION = (1.0/32768.0)
 
 MIN_RMS = 0.015
-NOTE_PPRECISION = 15
+NOTE_PPRECISION = 20
 NOTES = [[440, 'A'], [329.6, 'E'], [261.6, 'C'], [392, 'G']] # ukulele, G tuning
 
 
@@ -61,7 +61,7 @@ while True:
             freq = frequency(block)
             for hz, note in NOTES:
                 if abs(hz-freq) < NOTE_PPRECISION:
-                    sys.stdout.write(note + "\n")
+                    sys.stdout.write(note)
                     sys.stdout.flush() # so other proccess can read stdout after each note
 
     except IOError, e:
