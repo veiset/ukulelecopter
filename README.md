@@ -10,3 +10,8 @@ Running the application:
 ```
 python noteanalyzer.py | node ukulelecopter.js
 ```
+
+
+The ukulelecopter in action
+---------------------------
+www.youtube.com/watch?v=yh703kmpsDI
