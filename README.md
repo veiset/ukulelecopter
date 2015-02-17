@@ -12,6 +12,6 @@ python noteanalyzer.py | node ukulelecopter.js
 ```
 
 
-The ukulelecopter in action
+About
 ---------------------------
-www.youtube.com/watch?v=yh703kmpsDI
+http://open.bekk.no/ukulelecopter
